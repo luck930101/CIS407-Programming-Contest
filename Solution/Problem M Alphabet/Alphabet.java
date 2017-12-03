@@ -1,7 +1,6 @@
-//Let max[i] represent the length of the longest increasing subsequence so far.
-//If any element before i is smaller than nums[i], 
-//then max[i] = max(max[i], max[j]+1).
-public class returninsert {
+import java.util.Scanner;
+
+public class Alphabet {
 	public static int lengthOfLIS(String str) {
 	    if(str==null || str.length()==0)
 	        return 0;
@@ -28,9 +27,11 @@ public class returninsert {
 	public static void main(String[] args) {
 		//
 		// TODO Auto-generated method stub
-		System.out.println(lengthOfLIS("xyzabcdefghijklmnopqrstuvw"));
-		System.out.println(lengthOfLIS("aiemckgobjfndlhp"));
-
+//		System.out.println(lengthOfLIS("xyzabcdefghijklmnopqrstuvw"));
+//		System.out.println(lengthOfLIS("aiemckgobjfndlhp"));
+		Scanner scan = new Scanner(System.in);
+		String s = scan.nextLine();
+		System.out.println(lengthOfLIS(s));
 	}
 
 }
